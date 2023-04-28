@@ -26,7 +26,7 @@ let tipPercentage = 0.18
 let bill = 13.00
 let tip = bill * tipPercentage
 let total = bill * tipPercentage
-let message = "the tip on a " + bill + " food bill is" + tip 
+let message = "the tip on a " + bill + " food bill is" + tip
 
 console.log(message)
 
@@ -40,21 +40,24 @@ console.log(message)
 let playerName = 'Luis'
 if (playerName.startsWith("L")) {
     //code that runs if the conditions is turthy
-    
+
 } else {
     //code that runs if the condition is falsy
 }
+function getFriendshipStatus(friendName = "") {
+    const isEven = friendName.legnt % 2 === 0
+    return isEven
 
-let userAge = 76
-let minDrinkingAge = 21
-let isDrinkingAge = userAge >= minDrinkingAge
-let isFriend = getFriendshipStatus() // either true or false
+}
+function exe1(userage, minDrinkingAge,name) {
 
+    let isDrinkingAge = userAge >= minDrinkingAge
+    let isFriend = getFriendshipStatus(name)
 
 if (isDrinkingAge && isFriend) {
-    console.log("Congratulations: You have been invited to our Autumn Bar Crawl!")
-    
+    return name + ",Congratulations: You have been invited to our Autumn Bar Crawl!"
+
 } else {
-    console.log("Sorry, but you're either too young or we don't really know you.")
-    
+    return name + ", s1orry, but you're either too young or we don't really know you."
+}
 }
